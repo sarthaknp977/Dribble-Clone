@@ -1,9 +1,217 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+* {
     margin: 0;
-    padding: 0;box-sizing: border-box;
+    padding: 0;
+    box-sizing: border-box;
 }
-html,body{
+
+
+
+@font-face {
+    font-family: "Mona Sans";
+    src:
+        url('Mona-Sans.woff2') format('woff2 supports variations'),
+        url('Mona-Sans.woff2') format('woff2-variations');
+    font-weight: 200 900;
+    font-stretch: 75% 125%;
+}
+
+html {
+    font-family: sans-serif;
+
+}
+
+html,
+body {
     height: 100%;
     width: 100%;
 }
 
+#main {
+    padding-top: 1px;
+    height: 100%;
+    width: 100%;
+    background-color: #fff;
+}
+
+nav {
+    font-family: sans-serif;
+    height: 7vw;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 2.9vw 3vw;
+    position: relative;
+}
+
+.nav1 {
+    display: flex;
+    height: fit-content;
+    width: 35%;
+    justify-content: space-between;
+    font-size: 0.7rem;
+    /* background-color: red; */
+}
+
+.nav2 {
+    /* background-color: red; */
+    position: absolute;
+    bottom: 33%;
+    left: 46%;
+}
+
+.nav3 {
+    width: 30%;
+    display: flex;
+    height: 3.34vw;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    bottom: 30%;
+    right: 4%;
+    gap: 1vw;
+
+}
+
+.nav3 .login {
+    background-color: #fff;
+    border: none;
+    color: black;
+    font-weight: bolder;
+    font-size: 0.8rem;
+
+}
+
+.nav3 input {
+    background: #f4f5fb;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 40px;
+    height: 100%;
+    width: 60%;
+}
+
+.nav3 input:focus {
+    outline: none
+}
+
+.nav3 input::placeholder {
+    color: #8e8d98;
+}
+/* 
+.hidden-one{
+
+    background: #000;
+    height: 0px;
+    position: absolute;
+    width: 220px;
+    top: 85%;
+    border-radius: 20px;
+    display: flex;
+    padding-left: 20px;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+} */
+/* .one-up,.one-down,.two-up,.two-down,.two-middle{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+
+} */
+/* .hidden-two{
+    background: #000;
+    height: 0px;
+    position: absolute;
+    width: 270px;
+    top: 85%;
+    left: 20%;
+    border-radius: 20px;
+    display: flex;
+padding-left: 20px;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+} */
+
+.signup {
+    height: 102%;
+    font-weight: bolder;
+    padding: 0 1.5vw;
+    background-color: black;
+    color: white;
+    border-radius: 40px;
+    border: none;
+}
+
+.first-content {
+    margin-top: 3.2vw;
+    height: 60vh;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    font-weight: lighter;
+    align-items: center;
+}
+
+.first-content h1 {
+    font-family: "Source Serif 4";
+    font-size: 4.4vw;
+    line-height: 1.25;
+    text-align: center;
+    margin-bottom: 2vw;
+    font-weight: 500;
+
+}
+
+.first-content h5 {
+    text-align: center;
+    font-size: 1.1vw;
+    font-weight: 300;
+    line-height: 1.8;
+}
+
+.first-content input {
+    margin-top: 4.5vw;
+    width: 40%;
+    height: 4vw;
+    border: 1px solid #e7e7e9;
+    border-radius: 40px;
+    padding: 0 3vw;
+    box-shadow: none;
+    transition: box-shadow 0.2s ease-in;
+}
+
+.first-content input::placeholder {
+    color: #cacacf;
+
+}
+
+.first-content input:hover {
+    box-shadow: 0 0 10px #fa9be8af;
+}
+
+.first-content input:focus {
+    outline: 1px solid #f8c1f0;
+    box-shadow: 0 0 10px #fa9be8af;
+}
+
+.trends{
+    margin-top: 3vw;
+    width: 50%;
+    font-weight: 300;
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9vw;
+    align-items: center;
+}
+
+.trends p{
+    border: 1px solid #e7e7e9;
+
+padding: 10px 20px;
+    border-radius: 22px;
+}
