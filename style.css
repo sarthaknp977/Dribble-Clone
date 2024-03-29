@@ -372,7 +372,10 @@ padding: 10px 20px;
     justify-content: center;
 }
 
-
+.image-content .image .info button:hover,
+.image-content .video .info button:hover{
+    cursor: pointer;
+}
 @keyframes movig {
     0% {
         transform: translateX(0);
@@ -399,7 +402,26 @@ padding: 10px 20px;
     list-style: none;
 }
 
-.cards .cs{
+.cards .cc{
     background-color: red;
-height: 220px;
+    height: 220px;
+    box-shadow: none;
+position: relative;
+
+}
+
+.cards .cc::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+transition: background-color 400ms ease-in;
+    
+}
+
+.cc:hover::after{
+
+    background-color: #3d3d4e26;
+    height: 50px;
+    width: 100%;
 }
