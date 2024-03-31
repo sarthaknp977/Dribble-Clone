@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const cardsContainer = document.querySelector('.cards-container');
-    const cardCount = 40; // Number of cards
+    const cardCount = 40;
   
     for (let i = 1; i <= cardCount; i++) {
       const cardHTML = `
